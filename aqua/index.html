@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aqua Engine - Tiago Costa</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='../style.css' rel='stylesheet' type='text/css'>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-63488319-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>   
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../jquery.nouislider.min.js"></script>
+    <link href="../jquery.nouislider.min.css" rel="stylesheet" property='stylesheet'>
+    <script src="../script.js"></script>
+    
+    <div id="header">
+        <div id="header_container_outter">
+            <div id="header_container">
+                <div id="title">
+                    <h1>Tiago Costa</h1>
+                    <h3>Graphics/Engine programmer</h3>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li><a href="../index.html">ABOUT ME</a></li>
+                        <li><a href="index.html" class="selected">AQUA ENGINE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="feature">
+            <img src="../img/scattering.png" alt="Aqua Engine Main Image">
+            <div class="feature_header">
+                <div class="feature_centered">
+                    <h1>AQUA ENGINE v0.5</h1>
+                    <h3><a href="https://github.com/tiagovcosta/aquaengine">View source code on GitHub</a></h3>
+                </div>
+            </div>
+        </div>
+        
+        <h1 class="feature_info">FEATURES</h1>
+        
+        <div class="feature_info">
+            <h2>Data Oriented And Easily Extensible Design</h2>
+
+            The engine's data oriented architecture, using cache friendly data layouts, results in excellent performance on modern hardware, where the main bottleneck is memory speed.
+        </div>
+        
+        <div class="feature_info">
+            <h2>Physically Based Shading</h2>
+
+            The Physically Based Shading shader simulates the interaction between light and materials using real world physics, resulting in realistic looking materials that don't require tweaking when the lighting conditions change.
+        </div>
+        
+        <div class="feature_info">
+            <h2>Tiled Deferred Lighting</h2>
+
+            Efficiently render large number of lights by taking advantage of modern GPUs Compute Shaders.
+        </div>
+        
+        <div class="feature_info">
+            <h2>Cascaded Shadow Maps</h2>
+
+            Add high quality shadows to large areas with small impact on performance by efficiently distributing the shadow map resolution over the view frustum. 
+        </div>
+        
+        <br>
+        
+        <div class="feature">
+            <img src="../img/ssr_on.jpg" alt="Aqua Engine SSR ON Image">
+            <div id="ssr" class="cmp_container">
+                <div class="img_cmp_container">
+                    <img src="../img/ssr_off.jpg" alt="Aqua Engine SSR OFF Image">
+                </div>
+            </div>
+            <div class="feature_header">
+                <div class="feature_centered">
+                    <h1>Screen Space Reflections</h1>
+                </div>
+            </div>
+            
+            <div id="slider_ssr"></div>
+            
+            <br>
+            
+            <div class="feature_info">
+            Screen space ray-traced reflections allows any surface to reflect its nearby surroundings efficiently in real time.
+            </div>
+        </div>
+        
+        <div class="feature_info">
+            <h2>Dynamic Time of Day</h2>
+
+            The physically based Rayleigh and Mie scattering shaders create a realistic skydome that can be updated in real time by changing the sun light direction.
+            
+        </div>
+        
+        <div class="feature_info">
+            <h2>HDR Tone Mapping and Bloom</h2>
+
+            High intensity lights are dynamically mapped back into the display's range by simulating eye adaptation and glare.
+        </div>
+        
+        <br>
+        
+        <div class="feature">
+            <img src="../img/dof_on.jpg" alt="Aqua Engine DOF ON Image">
+            <div id="dof" class="cmp_container">
+                <div class="img_cmp_container">
+                    <img src="../img/dof_off.jpg" alt="Aqua Engine DOF OFF Image">
+                </div>
+            </div>
+            <div class="feature_header">
+                <div class="feature_centered">
+                    <h1>Depth of Field</h1>
+                </div>
+            </div>
+            
+            <div id="slider_dof"></div>
+            
+            <br>
+            
+            <div class="feature_info">
+            Simulate camera lens depth of field by blurring both near and far fields based on circle of confusion size.
+            </div>
+        </div>
+        
+        <div class="feature_info">
+            <h2>Motion Blur</h2>
+
+            Fast camera movement creates blurry trails along the movement path. Per-object motion blur coming soon.
+        </div>
+        
+        <div class="feature_info">
+            <h2>Volumetric Lighting</h2>
+
+            Create the appearance of humid, dusty or smoky environments using volumetric lights that simulate the scattering of light by particles in the air.
+        </div>
+        
+        <div class="feature_info">
+            <h2>Large Terrain Rendering</h2>
+
+            Render realistic terrains efficiently using continuous level-of-detail without popping artifacts.
+        </div>
+        
+        <br>
+        
+        <div class="feature">
+            <img src="../img/img.png" alt="Aqua Engine PhysX Image">
+            <div class="feature_header">
+                <div class="feature_centered">
+                    <h1>PhysX Integration</h1>
+                </div>
+            </div>
+        </div>
+        
+        <h1 class="feature_info">More features coming soon</h1>
+        
+        <br>
+        
+    </div>
+    
+    <!--
+    <div class="center" id="imgs">
+        <img class="full" src="img/img1.png" alt="aqua_main_img">
+    </div>
+    -->
+</body>
+</html>
+
+<!-- Set min height and max width for text -->
